@@ -1,0 +1,29 @@
+[33mcommit a6cecd8557ae69a56ea0f41d85cc4a1722e8e9b1[m[33m ([m[1;36mHEAD[m[33m -> [m[1;32mmaster[m[33m, [m[1;31morigin/master[m[33m, [m[1;32mameerBranch[m[33m)[m
+Author: ameer <abadran281@gmail.com>
+Date:   Sun Mar 17 00:46:45 2024 +0200
+
+    Added thierd h1 for my project to pull it on github
+
+[33mcommit e5a48c110fa96fe393d37cac15f0741fa1023da5[m
+Author: ameer <abadran281@gmail.com>
+Date:   Sat Mar 16 23:26:35 2024 +0200
+
+    Added one more h1 tag
+
+[33mcommit 776c1077d572239babb2c3bd41743b3eface34cf[m
+Author: ameer <abadran281@gmail.com>
+Date:   Sat Mar 16 22:08:30 2024 +0200
+
+    creating hello message
+
+[33mcommit 8b868afcb33bcfa033b7246ea8cd6175fbd914db[m
+Author: ameer <abadran281@gmail.com>
+Date:   Sat Mar 16 21:54:11 2024 +0200
+
+    Creating project
+
+[33mcommit 4ca4f94e31fbc2047d25bf3e5798f9d8628f78a1[m
+Author: ameer <abadran281@gmail.com>
+Date:   Sat Mar 16 21:48:25 2024 +0200
+
+    Create index.html
