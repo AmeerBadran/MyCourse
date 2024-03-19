@@ -3,13 +3,18 @@ body {
     margin: 0px;
     margin-left: 50px;
     margin-right: 50px;
-    background-color: rgb(46, 44, 51);
+    background-color: rgb(255, 255, 255);
     color: #000;
 }
 
-.mainDiv {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
+.projectIcon{
+
+    width:40px;
+    height:32px;
+}
+
+.loginContainer {
+    margin-top: 100px;
+    margin-right: 150px;
+    margin-left: 150px;
 }
