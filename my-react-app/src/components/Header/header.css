@@ -1,0 +1,82 @@
+.projectIcon {
+    margin-right: 5px;
+    width: 60px;
+    height: 57px;
+}
+
+.loginContainer {
+    margin-top: 100px;
+    margin-right: 150px;
+    margin-left: 150px;
+}
+
+.projectHeader {
+    background-color: #33333300;
+    width: 100%;
+    z-index: 1000;
+    top: 0;
+    position: fixed;
+    transition: height 0.5s ease, background-color 0.5s ease;
+}
+
+.transitionDiv {
+margin-top: 10px;
+    height: 100px;
+    transition: height 0.5s ease;
+}
+
+.scrolled {
+    
+    margin-top: 0px;
+    height: 80px;
+}
+.scrolled1 {
+    box-shadow: 1px 1px 5px 1px rgba(0, 0, 0, 0.616);
+    margin-top: 0px;
+    height: 80px;
+    background-color: rgb(20, 20, 20);
+}
+.scrolled2 {
+    gap: 111px;
+}
+
+.nestHeaderDiv {
+    margin-right: 200px;
+    margin-left: 200px;
+
+}
+
+.logoLink {
+    align-items: center;
+    font-size: 150%;
+    font-weight: 700;
+    
+}
+
+.logoDiv {
+    justify-content: center;
+    align-items: center;
+}
+
+.logoText {
+    margin-top: 10px;
+    color: #ffffff;
+}
+
+.ulLinksClass {
+    gap: 10px;
+    --bs-nav-link-color: #ffffff;
+    --bs-nav-link-hover-color: #4e1fbd;
+    font-weight: 500;
+    font-size: 100%;
+    top: 20px;
+    gap: 10px;
+    transition: gap 0.9s ease;
+}
+.scrolledUlLinksClass {
+    gap: 30px;
+}
+
+.link-secondary {
+    color: #4e1fbd !important;
+}

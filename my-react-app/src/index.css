@@ -1,20 +1,34 @@
 body {
-    
     margin: 0px;
-    margin-left: 50px;
-    margin-right: 50px;
     background-color: rgb(255, 255, 255);
-    color: #000;
 }
 
-.projectIcon{
-
-    width:40px;
-    height:32px;
+.homeBody {
+    display: flex;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    margin: 0px;
+    justify-content: center;
+    align-items: center;
 }
 
-.loginContainer {
-    margin-top: 100px;
-    margin-right: 150px;
-    margin-left: 150px;
+.videoStyle {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    object-fit: cover;
+}
+
+.centerContents {
+    color: rgb(255, 255, 255);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    gap:20px;
 }
