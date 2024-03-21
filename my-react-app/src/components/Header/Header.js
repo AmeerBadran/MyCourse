@@ -6,7 +6,7 @@ export default function Header() {
 
     useEffect(() => {
         const handleScroll = () => {
-            const isScrolled = window.scrollY > 0;
+            const isScrolled = window.scrollY > 90;
             if (isScrolled !== scrolled) {
                 setScrolled(isScrolled);
             }
@@ -21,7 +21,7 @@ export default function Header() {
 
     return (
         <header className={`align-items-center justify-content-center mb-4 projectHeader ${scrolled ? 'scrolled1' : ''}`}>
-            <div className={`nestHeaderDiv d-flex flex-wrap align-items-center justify-content-center justify-content-md-between transitionDiv ${scrolled ? 'scrolled' : ''}`}>
+            <div className={`nestHeaderDiv d-flex align-items-center justify-content-center justify-content-md-between transitionDiv ${scrolled ? 'scrolled' : ''}`}>
                 <div className="col-md-3 mb-2 mb-md-0 logoDiv">
                     <Link to="/" className="d-inline-flex link-body-emphasis text-decoration-none logoLink">
                         <img src={require('../../assets/Image/logo.jpg')} className="rounded-circle projectIcon" alt="..." />

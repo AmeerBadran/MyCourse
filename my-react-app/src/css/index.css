@@ -1,0 +1,170 @@
+body {
+    margin: 0px;
+    background-color: rgb(255, 255, 255);
+
+}
+
+.homeBody {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    overflow: hidden;
+    margin: 0px;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+
+}
+
+.videoStyle {
+    position: sticky;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: -1;
+    object-fit: cover;
+    height: 100vh;
+    opacity: 0.5;
+}
+.divVideoStyle{
+    position: sticky;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: -1;
+    object-fit: cover;
+    height: 100vh;
+    background-color:#000000b7;
+}
+
+.centerContents {
+    color: rgb(255, 255, 255);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+
+    font-size: 120%;
+}
+
+.homeButton {
+    width: 230px;
+    height: 65px;
+    font-size: medium;
+    font-weight: 600;
+    background-color: #4e1fbd;
+    border: 3px solid #4e1fbd;
+    border-color: #4e1fbd;
+    color: white;
+}
+
+.homeButton:hover {
+    background-color: #512ca8;
+    border-color: #4e1fbd;
+    color: #ffffff;
+}
+
+.homeText {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    top: -600px;
+    --bs-gutter-x: 0rem;
+}
+
+.card {
+    height: 100%;
+    box-shadow: 2px 12px 15px 1px rgba(141, 141, 141, 0.397);
+}
+
+.homeCard {
+    position: relative;
+    top: 400px;
+    transition: top 0.5s ease;
+}
+
+.scrolledCard {
+    position: relative;
+    top: 200px;
+}
+
+.cardStyle {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    width: 350px;
+    height: 400px;
+    background-color: #ffffff;
+    border: 1px solid rgba(131, 100, 202, 0.411);
+    border-radius: 4px;
+    color: #150833;
+    padding: 55px 30px 60px;
+    text-align: center;
+    transition: background-color 0.5s ease, color 0.5s ease;
+}
+
+.cardStyle:hover {
+    color: #ffffff;
+    background-color: #4e1fbd;
+}
+
+.carIconSize {
+    font-size: 350%;
+}
+
+.servicesContainer {
+
+    position: relative;
+    top: 500px;
+    gap: 20px 20px;
+    transition: top 0.5s ease;
+}
+
+.scrolledCard2 {
+    position: relative;
+    top: 270px;
+}
+
+.rowsStyle {
+    
+    font-family: 'Poppins', sans-serif;
+    margin-left: 45px;
+}
+
+.cardLine {
+    height: 4px;
+    width: 10%;
+    margin: 20px;
+    border-width: 4px
+}
+
+.homeLine {
+    position: relative;
+    top: -16px;
+    width: 1400px;
+}
+
+.slideStyle{
+    position: relative;
+    top: 550px;
+    box-shadow: 0px 0px 15px 5px #220c508a;
+    transition: top 0.5s ease;
+    background-color: rgb(44, 44, 44);
+    --bs-gutter-x: 0rem;
+}
+
+.scrolledCard3{
+    position: relative;
+    top: 360px;
+}
+
+
+
+.imgStyle{
+    width: 1189px;
+    height: 799px;
+    opacity: 0.9;
+}
