@@ -26,6 +26,7 @@ body {
     height: 100vh;
     opacity: 0.5;
 }
+
 .divVideoStyle{
     position: sticky;
     top: 0;
@@ -44,7 +45,6 @@ body {
     align-items: center;
     display: flex;
     flex-direction: column;
-
     font-size: 120%;
 }
 
@@ -101,7 +101,7 @@ body {
     border: 1px solid rgba(131, 100, 202, 0.411);
     border-radius: 4px;
     color: #150833;
-    padding: 55px 30px 60px;
+    padding: 55px 40px 60px;
     text-align: center;
     transition: background-color 0.5s ease, color 0.5s ease;
 }
@@ -116,11 +116,15 @@ body {
 }
 
 .servicesContainer {
-
     position: relative;
     top: 500px;
     gap: 20px 20px;
     transition: top 0.5s ease;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 540px;
 }
 
 .scrolledCard2 {
@@ -129,9 +133,8 @@ body {
 }
 
 .rowsStyle {
-    
-    font-family: 'Poppins', sans-serif;
-    margin-left: 45px;
+    position: relative;
+    top: 20px;
 }
 
 .cardLine {
@@ -147,24 +150,60 @@ body {
     width: 1400px;
 }
 
+.slideContainer{
+    position: relative;
+    top: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transition: top 0.5s ease;
+}
+
 .slideStyle{
     position: relative;
-    top: 550px;
+    top:50px;
     box-shadow: 0px 0px 15px 5px #220c508a;
-    transition: top 0.5s ease;
     background-color: rgb(44, 44, 44);
     --bs-gutter-x: 0rem;
+    border-radius: 5px;
 }
 
 .scrolledCard3{
     position: relative;
-    top: 360px;
+    top: 350px;
 }
-
-
 
 .imgStyle{
     width: 1189px;
     height: 799px;
     opacity: 0.9;
+    border-radius: 5px;
+}
+
+.headerLine{
+    width: 300px;
+    height: 4px;
+    background-color: #2e1172;
+    --bs-text-opacity: 0;
+    
+}
+
+.homeFooter{
+    display: flex;
+    justify-content: center;
+    color: white;
+    background-color:#1b1b1b;
+    width: 100%;
+    display: flex;
+    margin-bottom: 0px;
+}
+a{
+    color: white;
+}
+h5{
+    color: white;
+}
+li{
+    color: white;
 }
