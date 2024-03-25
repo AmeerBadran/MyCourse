@@ -1,0 +1,21 @@
+.homeFooter {
+    display: flex;
+    justify-content: center;
+    color: white;
+    background-color: #1b1b1b;
+    width: 100%;
+    display: flex;
+    margin-bottom: 0px;
+}
+
+a {
+    color: white;
+}
+
+h5 {
+    color: white;
+}
+
+li {
+    color: white;
+}
