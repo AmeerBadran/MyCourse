@@ -7,7 +7,7 @@ export default function Header(props) {
 
     useEffect(() => {
         const handleScroll = () => {
-            const isScrolled = window.scrollY > 90;
+            const isScrolled = window.scrollY > 0;
             if (isScrolled !== scrolled) {
                 setScrolled(isScrolled);
             }
@@ -36,7 +36,18 @@ export default function Header(props) {
                     <ul className={`navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll ulLinksClass ${scrolled ? 'scrolledUlLinksClass' : ''}`} >
                         <li className="nav-item"><Link to="/" className={`nav-link px-2 ${props.headerLink === 'home' ? 'link-secondary' : ''}`}>HOME</Link></li>
                         <li className="nav-item"><Link to="/services" className={`nav-link px-2 ${props.headerLink === 'services' ? 'link-secondary' : ''}`}>SERVICES</Link></li>
-                        <li className="nav-item"><Link to="/pricing" className={`nav-link px-2 ${props.headerLink === '' ? 'link-secondary' : ''}`}>FEATURED</Link></li>
+                        <li className="nav-item dropdown">
+                            <Link className="nav-link dropdown-toggle" to="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                Dropdown
+                            </Link>
+                            <ul className="dropdown-menu">
+                                <li><Link className="dropdown-item" to="#">Action</Link></li>
+                                <li><Link className="dropdown-item" to="#">Another action</Link></li>
+                                <li><Link className="dropdown-item" to="#">Action</Link></li>
+                                <li><Link className="dropdown-item" to="#">Another action</Link></li>
+                                <li><Link className="dropdown-item" to="#">Something else here</Link></li>
+                            </ul>
+                        </li>
                         <li className="nav-item"><Link to="/faqs" className={`nav-link px-2 ${props.headerLink === '' ? 'link-secondary' : ''}`}>NEW</Link></li>
                         <li className="nav-item"><Link to="/about" className={`nav-link px-2 ${props.headerLink === '' ? 'link-secondary' : ''}`}>BRANDS</Link></li>
                         <li className="nav-item"><Link to="/about" className={`nav-link px-2 ${props.headerLink === '' ? 'link-secondary' : ''}`}>CONTACT</Link></li>

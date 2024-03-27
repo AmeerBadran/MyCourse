@@ -18,7 +18,7 @@
     z-index: -1;
     object-fit: cover;
     height: 100vh;
-    opacity: 0.66;
+    opacity: 0.76;
 }
 
 .divVideoStyle {
@@ -26,9 +26,8 @@
     top: 0;
     left: 0;
     width: 100%;
-    z-index: -1;
     height: 100vh;
-    background-color: #000000d2;
+    background-color: #00000086;
 }
 
 .centerText {
@@ -58,14 +57,14 @@
 }
 
 .homeButton:hover {
-    background-color: #512ca8;
-    border-color: #4e1fbd;
+    background-color: #6025e9;
+    border-color: #c0c0c0;
     color: #ffffff;
 }
 
 .homeContents {
     --bs-gutter-x: 0rem;
-    
+
     margin-bottom: 100px;
 }
 
@@ -183,8 +182,8 @@
     opacity: 0.9;
     border-radius: 5px;
     position: relative;
-    width: 50%!important;
-    height: 50%!important;
+    width: 50% !important;
+    height: 50% !important;
 }
 
 .headerLine {
@@ -192,16 +191,17 @@
     height: 4px;
     background-color: #11062b;
     --bs-text-opacity: 0;
-    
+
 }
-.headerText{
+
+.headerText {
     color: #000;
 }
-.textSlideDiv{
+
+.textSlideDiv {
     bottom: 6rem;
     left: 70%;
     transform: translateX(-50%);
     width: 400px;
-    color: rgb(0, 0, 0)!important;
+    color: rgb(0, 0, 0) !important;
 }
-

@@ -30,7 +30,76 @@ export default function Home() {
             window.removeEventListener('scroll', handleScroll);
         };
     }, [scrolled, scrolled2, scrolled3]);
+    const users = [{
+        title: "Card title",
+        stars: 3.5,
+        text: "This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.",
+        image:"4"
+    },
+    {
+        title: "Card title",
+        stars: 5.0,
+        text: "This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.",
+        image:"5"
+    },
+    {
+        title: "Card title",
+        stars: 4.5,
+        text: "This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.",
+        image:"6"
+    },
+    {
+        title: "Card title",
+        stars: 1.5,
+        text: "This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.",
+        image:"7"
+    },
+    {
+        title: "Card title",
+        stars: 2.5,
+        text: "This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.",
+        image:"2"
+    },
+    {
+        title: "Card title",
+        stars: 0.5,
+        text: "This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.",
+        image:"1"
+    }];
+    function printStars(starsNum) {
+        const intValue = Math.floor(starsNum);
+        const decValue = starsNum - intValue;
+        const noStars = 5 - starsNum;
+        const stars = [];
 
+        for (let i = 0; i < intValue; i++) {
+            stars.push(<i className="fa-solid fa-star" key={i}></i>);
+        }
+        if (decValue > 0) {
+            stars.push(<i className="fa-regular fa-star-half-stroke" key={intValue}></i>);
+        }
+        for (let i = 0; i < noStars-1; i++) {
+            stars.push(<i className="fa-regular fa-star" key={intValue + i + 1}></i>);
+        }
+
+        return stars;
+    }
+    const showStars = users.map((user, index) => (
+        <div className="col" key={index}>
+            <div className="card">
+                <img src={require(`../../assets/Image/${user.image}.jpg`)} className="card-img-top" alt="..." />
+                <div className="card-body">
+                    <div className="d-flex justify-content-between">
+                        <h5 className="card-title">{user.title}</h5>
+                        <div className="starsDiv" title={`hello`}>
+                            {printStars(user.stars)}
+                        </div>
+                    </div>
+                    <p className="card-text">{user.text}</p>
+                </div>
+            </div>
+        </div>
+    ));
 
     return (
         <div className="homeBody">
@@ -39,121 +108,14 @@ export default function Home() {
                 <video src={require("../../assets/Videos/course-video.mp4")} className="object-fit-cover videoStyle" autoPlay loop muted />
                 <div className="centerText">
                     <h1>FOR PROMPT AND LUXURIOUS SERVICE, CHOOSE PSCD.</h1><br></br>
-                    <p className="fw-semibold" style={{fontSize:"110%"}}>RESERVE YOUR CAR NOW FOR SWIFT DELIVERY TO ANY DESTINATION.</p>
+                    <p className="fw-semibold" style={{ fontSize: "110%" }}>RESERVE YOUR CAR NOW FOR SWIFT DELIVERY TO ANY DESTINATION.</p>
                     <button type="button" className="btn btn-light homeButton">ORDER NOW</button>
                 </div>
             </div>
             <div className="container-fluid homeContents">
                 <div className={`container homeCard ${scrolled ? 'scrolledCard' : ''}`}>
                     <div className="row row-cols-1 row-cols-md-3 g-4">
-                        <div className="col">
-                            <div className="card">
-                                <img src={require('../../assets/Image/6.jpg')} className="card-img-top" alt="..." />
-                                <div className="card-body">
-                                    <div className="d-flex justify-content-between">
-                                        <h5 className="card-title">Card title</h5>
-                                        <div className="starsDiv" title={`hello`}>
-                                            <i className="fa-solid fa-star"></i>
-                                            <i className="fa-solid fa-star"></i>
-                                            <i className="fa-regular fa-star-half-stroke"></i>
-                                            <i className="fa-regular fa-star"></i>
-                                            <i className="fa-regular fa-star"></i>
-                                        </div>
-                                    </div>
-                                    <p className="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div className="col">
-                            <div className="card">
-                                <img src={require('../../assets/Image/5.jpg')} className="card-img-top" alt="..." />
-                                <div className="card-body">
-                                    <div className="d-flex justify-content-between">
-                                        <h5 className="card-title">Card title</h5>
-                                        <div className="starsDiv" title={`hello`}>
-                                            <i className="fa-solid fa-star"></i>
-                                            <i className="fa-solid fa-star"></i>
-                                            <i className="fa-regular fa-star-half-stroke"></i>
-                                            <i className="fa-regular fa-star"></i>
-                                            <i className="fa-regular fa-star"></i>
-                                        </div>
-                                    </div>
-                                    <p className="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div className="col">
-                            <div className="card">
-                                <img src={require('../../assets/Image/4.jpg')} className="card-img-top" alt="..." />
-                                <div className="card-body">
-                                    <div className="d-flex justify-content-between">
-                                        <h5 className="card-title">Card title</h5>
-                                        <div className="starsDiv" title={`hello`}>
-                                            <i className="fa-solid fa-star"></i>
-                                            <i className="fa-solid fa-star"></i>
-                                            <i className="fa-regular fa-star-half-stroke"></i>
-                                            <i className="fa-regular fa-star"></i>
-                                            <i className="fa-regular fa-star"></i>
-                                        </div>
-                                    </div>
-                                    <p className="card-text">This is a longer card with supporting text below as a natural lead-in to additional content.</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div className="col">
-                            <div className="card">
-                                <img src={require('../../assets/Image/3.jpg')} className="card-img-top" alt="..." />
-                                <div className="card-body">
-                                    <div className="d-flex justify-content-between">
-                                        <h5 className="card-title">Card title</h5>
-                                        <div className="starsDiv" title={`hello`}>
-                                            <i className="fa-solid fa-star"></i>
-                                            <i className="fa-solid fa-star"></i>
-                                            <i className="fa-regular fa-star-half-stroke"></i>
-                                            <i className="fa-regular fa-star"></i>
-                                            <i className="fa-regular fa-star"></i>
-                                        </div>
-                                    </div>
-                                    <p className="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div className="col">
-                            <div className="card">
-                                <img src={require('../../assets/Image/2.jpg')} className="card-img-top" alt="..." />
-                                <div className="card-body">
-                                    <div className="d-flex justify-content-between">
-                                        <h5 className="card-title">Card title</h5>
-                                        <div className="starsDiv" title={`hello`}>
-                                            <i className="fa-solid fa-star"></i>
-                                            <i className="fa-solid fa-star"></i>
-                                            <i className="fa-regular fa-star-half-stroke"></i>
-                                            <i className="fa-regular fa-star"></i>
-                                            <i className="fa-regular fa-star"></i>
-                                        </div>
-                                    </div>
-                                    <p className="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div className="col">
-                            <div className="card">
-                                <img src={require('../../assets/Image/1.jpg')} className="card-img-top" alt="..." />
-                                <div className="card-body">
-                                    <div className="d-flex justify-content-between">
-                                        <h5 className="card-title">Card title</h5>
-                                        <div className="starsDiv" title={`hello`}>
-                                            <i className="fa-solid fa-star"></i>
-                                            <i className="fa-solid fa-star"></i>
-                                            <i className="fa-regular fa-star-half-stroke"></i>
-                                            <i className="fa-regular fa-star"></i>
-                                            <i className="fa-regular fa-star"></i>
-                                        </div>
-                                    </div>
-                                    <p className="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                                </div>
-                            </div>
-                        </div>
+                        {showStars}
                     </div>
                 </div>
 
