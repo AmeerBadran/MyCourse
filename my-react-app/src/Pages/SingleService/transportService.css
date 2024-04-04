@@ -1,0 +1,120 @@
+.serviceSIcon {
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    left: 65%;
+    box-shadow: 0 0 10px 10px rgb(184, 183, 183);
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.imgStyleService {
+    border-radius: 50%;
+    width: 80px;
+    height: 80px;
+    position: relative;
+    bottom: 17px;
+    right: 10px;
+}
+
+.containerDetails {
+    gap: 60px;
+    justify-content: center;
+}
+
+.cardServiceStyle {
+    padding-bottom: 40px;
+    overflow: hidden;
+    width: 399px;
+    height: 250px;
+    background-color: rgb(226, 226, 226);
+}
+
+.showUserSlides {
+    width: 100%;
+    padding: 30px;
+    margin-bottom: 100px;
+}
+
+.userCard {
+    padding: 20px;
+}
+
+.userImg {
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: 100%;
+    left: 15%;
+    box-shadow: 0 0 10px 5px rgb(163, 163, 163);
+}
+
+.cardUserStyle {
+    padding-bottom: 40px;
+}
+
+.containerCardUsers {
+    margin: 10px;
+}
+
+.clientsHeader {
+    display: flex;
+    flex-direction: column;
+    justify-self: center;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.mapContainer {
+    margin-bottom: 100px;
+}
+
+.containerServiceInfo {
+    display: grid;
+    grid-template-columns: auto;
+    gap: 80px;
+    margin-bottom: 150px;
+
+}
+
+
+.linkStyleService {
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.serviceSIconLink {
+    position: relative;
+    bottom: 0%;
+    width: 700px;
+    height: 290px;
+    border-radius: 50% 50% 0 0;
+    box-shadow: 0 0 10px 10px #8f7ac0b7;
+    background-color: #4e1fbd;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.4s;
+}
+
+.serviceSIconLink:hover {
+    background-color: #ffffff;
+}
+
+.serviceSIconLink .bigButton {
+    color: #ffffff;
+    transition: 0.4s;
+}
+
+.serviceSIconLink:hover .bigButton {
+    color: #4e1fbd;
+}

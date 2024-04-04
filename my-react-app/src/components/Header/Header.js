@@ -21,27 +21,27 @@ export default function Header(props) {
     }, [scrolled]);
 
     return (
-        <nav className={`navbar navbar-expand-lg projectHeader ${scrolled ? 'scrolled1' : ''}`}>
-            <div className={`container transitionDiv ${scrolled ? 'scrolled' : ''}`}>
+        <nav className={`navbar navbar-expand-lg projectHeader ${scrolled || props.headerColor === "black" ? 'scrolled1' : ''}`}>
+            <div className={`container transitionDiv ${scrolled || props.headerColor === "black" ? 'scrolled' : ''}`}>
                 <div className="col-md-3 mb-2 mb-md-0 logoDiv">
                     <Link to="/" className="d-inline-flex link-body-emphasis text-decoration-none logoLink">
                         <img src={require('../../assets/Image/logo.jpg')} className="rounded-circle projectIcon" alt="..." />
                         <p className="logoText">PSCD</p>
                     </Link>
                 </div>
-                <button class="navbar-toggler navButton" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll" aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
+                <button className="navbar-toggler navButton" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll" aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
+                    <span className="navbar-toggler-icon"></span>
                 </button>
-                <div className={`collapse navbar-collapse collapseDiv ${scrolled ? 'scrolled2' : ''}`} id="navbarScroll">
-                    <ul className={`navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll ulLinksClass ${scrolled ? 'scrolledUlLinksClass' : ''}`} >
+                <div className={`collapse navbar-collapse collapseDiv ${scrolled || props.headerColor === "black" ? 'scrolled2' : ''}`} id="navbarScroll">
+                    <ul className={`navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll ulLinksClass ${scrolled || props.headerColor === "black" ? 'scrolledUlLinksClass' : ''}`} >
                         <li className="nav-item"><Link to="/" className={`nav-link px-2 ${props.headerLink === 'home' ? 'link-secondary' : ''}`}>HOME</Link></li>
                         <li className="nav-item"><Link to="/services" className={`nav-link px-2 ${props.headerLink === 'services' ? 'link-secondary' : ''}`}>SERVICES</Link></li>
                         <li className="nav-item dropdown">
-                            <Link className="nav-link dropdown-toggle" to="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                Dropdown
+                            <Link className={`nav-link px-2 dropdown-toggle ${props.headerLink === 'singleService' ? 'link-secondary' : ''}`} to="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                DROPDOWN
                             </Link>
                             <ul className="dropdown-menu">
-                                <li><Link className="dropdown-item" to="#">Action</Link></li>
+                                <li><Link className={`dropdown-item ${props.headerLink === 'singleService' ? 'link-secondary' : ''}`} to="/transport">TRANSPORT</Link></li>
                                 <li><Link className="dropdown-item" to="#">Another action</Link></li>
                                 <li><Link className="dropdown-item" to="#">Action</Link></li>
                                 <li><Link className="dropdown-item" to="#">Another action</Link></li>
@@ -53,8 +53,8 @@ export default function Header(props) {
                         <li className="nav-item"><Link to="/about" className={`nav-link px-2 ${props.headerLink === '' ? 'link-secondary' : ''}`}>CONTACT</Link></li>
                     </ul>
                     <form className="d-flex" role="search">
-                        <button type="button" className="btn btn-outline-light me-2">Login</button>
-                        <button type="button" className="btn btn-light">Sign-up</button>
+                        <Link to="/logIn" className="btn btn-outline-light me-2">Login</Link>
+                        <Link to="/signUp" className="btn btn-light">Sign-up</Link>
                     </form>
                 </div>
             </div>

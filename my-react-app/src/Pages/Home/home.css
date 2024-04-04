@@ -108,6 +108,13 @@
     color: #ffffff;
     background-color: #4e1fbd;
 }
+.headerServ {
+    color: #180a3a;
+    transition: color 0.5s ease;
+}
+.cardStyle:hover .headerServ {
+    color: #ffffff;
+}
 
 .carIconSize {
     font-size: 350%;

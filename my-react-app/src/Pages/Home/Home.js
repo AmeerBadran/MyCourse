@@ -34,51 +34,56 @@ export default function Home() {
         title: "Card title",
         stars: 3.5,
         text: "This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.",
-        image:"4"
+        image: "4"
     },
     {
         title: "Card title",
         stars: 5.0,
         text: "This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.",
-        image:"5"
+        image: "5"
     },
     {
         title: "Card title",
         stars: 4.5,
         text: "This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.",
-        image:"6"
+        image: "6"
     },
     {
         title: "Card title",
         stars: 1.5,
         text: "This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.",
-        image:"7"
+        image: "7"
     },
     {
         title: "Card title",
         stars: 2.5,
         text: "This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.",
-        image:"2"
+        image: "2"
     },
     {
         title: "Card title",
-        stars: 0.5,
+        stars: 5.0,
         text: "This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.",
-        image:"1"
+        image: "1"
     }];
     function printStars(starsNum) {
         const intValue = Math.floor(starsNum);
         const decValue = starsNum - intValue;
         const noStars = 5 - starsNum;
         const stars = [];
-
+        if (intValue === 0) {
+            for (let i = 0; i < noStars; i++) {
+                stars.push(<i className="fa-regular fa-star" key={intValue + i + 1}></i>);
+            }
+            return stars;
+        }
         for (let i = 0; i < intValue; i++) {
             stars.push(<i className="fa-solid fa-star" key={i}></i>);
         }
         if (decValue > 0) {
             stars.push(<i className="fa-regular fa-star-half-stroke" key={intValue}></i>);
         }
-        for (let i = 0; i < noStars-1; i++) {
+        for (let i = 0; i < noStars - 1; i++) {
             stars.push(<i className="fa-regular fa-star" key={intValue + i + 1}></i>);
         }
 
@@ -131,7 +136,7 @@ export default function Home() {
                                 <br></br>
                                 <br></br>
                                 <br></br>
-                                <h5>Largest Dealership of Car</h5>
+                                <h5 className="headerServ">Largest Dealership of Car</h5>
                                 <h6>Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut den fugit sed quia.</h6>
                                 <hr className="cardLine"></hr>
                             </div>
@@ -142,7 +147,7 @@ export default function Home() {
                                 <br></br>
                                 <br></br>
                                 <br></br>
-                                <h5>Largest Dealership of Car</h5>
+                                <h5 className="headerServ">Largest Dealership of Car</h5>
                                 <h6>Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut den fugit sed quia.</h6>
                                 <hr className="cardLine"></hr>
                             </div>
@@ -153,7 +158,7 @@ export default function Home() {
                                 <br></br>
                                 <br></br>
                                 <br></br>
-                                <h5>Largest Dealership of Car</h5>
+                                <h5 className="headerServ">Largest Dealership of Car</h5>
                                 <h6>Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut den fugit sed quia.</h6>
                                 <hr className="cardLine"></hr>
                             </div>
@@ -178,7 +183,7 @@ export default function Home() {
                                 <div className="carousel-caption d-none d-md-block textSlideDiv">
                                     <h5 className="headerText">First slide label</h5>
                                     <p>Some representative placeholder content for the first slide.</p>
-                                    <button type="button" class="btn btn-dark">Dark</button>
+                                    <button type="button" className="btn btn-dark">Dark</button>
                                 </div>
                             </div>
                             <div className="carousel-item" data-bs-interval="2000">
@@ -186,7 +191,7 @@ export default function Home() {
                                 <div className="carousel-caption d-none d-md-block textSlideDiv">
                                     <h5 className="headerText">Second slide label</h5>
                                     <p>Some representative placeholder content for the second slide.</p>
-                                    <button type="button" class="btn btn-dark">Dark</button>
+                                    <button type="button" className="btn btn-dark">Dark</button>
                                 </div>
                             </div>
                             <div className="carousel-item">
@@ -194,7 +199,7 @@ export default function Home() {
                                 <div className="carousel-caption d-none d-md-block textSlideDiv">
                                     <h5 className="headerText">Third slide label</h5>
                                     <p>Some representative placeholder content for the third slide.</p>
-                                    <button type="button" class="btn btn-dark">Dark</button>
+                                    <button type="button" className="btn btn-dark">Dark</button>
                                 </div>
                             </div>
                         </div>
