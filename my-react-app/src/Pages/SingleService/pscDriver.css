@@ -1,0 +1,67 @@
+.cardServiceStyle2 {
+    padding-bottom: 40px;
+    overflow: hidden;
+    width: 45%;
+    height: 250px;
+    background-color: rgb(226, 226, 226);
+}
+
+.serviceSIcon2 {
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    left: 77%;
+    box-shadow: 0 0 10px 10px rgb(184, 183, 183);
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.secHalfMap{
+    margin-top: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding-left: 65px;
+    padding-right: 65px;
+    row-gap: 10px;
+}
+
+.homeLine {
+    width: 450px;
+}
+
+.showCarSlides {
+    width: 100%;
+    padding: 30px;
+    position: absolute;
+    bottom: 0;
+}
+
+.carCard {
+    padding: 20px;
+}
+
+
+.carImg {
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: 100%;
+    left: 15%;
+    box-shadow: 0 0 10px 5px rgb(163, 163, 163);
+}
+
+.cardCarStyle {
+    padding-bottom: 40px;
+}
+.containerCardUsers{
+    width: 80%;
+    height: 220px;
+}

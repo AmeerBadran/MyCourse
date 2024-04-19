@@ -41,16 +41,16 @@ export default function Header(props) {
                                 DROPDOWN
                             </Link>
                             <ul className="dropdown-menu">
-                                <li><Link className={`dropdown-item ${props.headerLink === 'singleService' ? 'link-secondary' : ''}`} to="/transport">TRANSPORT</Link></li>
-                                <li><Link className="dropdown-item" to="#">Another action</Link></li>
+                                <li><Link className={`dropdown-item ${props.headerLink === 'TRANSPORT' ? 'link-secondary' : ''}`} to="/transport">TRANSPORT</Link></li>
+                                <li><Link className={`dropdown-item ${props.headerLink === 'PSCDDRIVER' ? 'link-secondary' : ''}`}  to="/pscDriver">PSCD DRIVER</Link></li>
                                 <li><Link className="dropdown-item" to="#">Action</Link></li>
                                 <li><Link className="dropdown-item" to="#">Another action</Link></li>
                                 <li><Link className="dropdown-item" to="#">Something else here</Link></li>
                             </ul>
                         </li>
-                        <li className="nav-item"><Link to="/faqs" className={`nav-link px-2 ${props.headerLink === '' ? 'link-secondary' : ''}`}>NEW</Link></li>
+                        <li className="nav-item"><Link to="/aboutUs" className={`nav-link px-2 ${props.headerLink === '' ? 'link-secondary' : ''}`}>ABOUT US</Link></li>
                         <li className="nav-item"><Link to="/about" className={`nav-link px-2 ${props.headerLink === '' ? 'link-secondary' : ''}`}>BRANDS</Link></li>
-                        <li className="nav-item"><Link to="/about" className={`nav-link px-2 ${props.headerLink === '' ? 'link-secondary' : ''}`}>CONTACT</Link></li>
+                        <li className="nav-item"><Link to="/contactUs" className={`nav-link px-2 ${props.headerLink === '' ? 'link-secondary' : ''}`}>CONTACT</Link></li>
                     </ul>
                     <form className="d-flex" role="search">
                         <Link to="/logIn" className="btn btn-outline-light me-2">Login</Link>

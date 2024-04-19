@@ -80,7 +80,7 @@
     grid-template-columns: auto;
     gap: 80px;
     margin-bottom: 150px;
-
+    height: 100%;
 }
 
 
@@ -90,10 +90,11 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    height: 100%;
 }
 
 .serviceSIconLink {
-    position: relative;
+    position: absolute;
     bottom: 0%;
     width: 700px;
     height: 290px;
@@ -117,4 +118,8 @@
 
 .serviceSIconLink:hover .bigButton {
     color: #4e1fbd;
+}
+
+.serviceInfoCard{
+    min-height: 700px;
 }

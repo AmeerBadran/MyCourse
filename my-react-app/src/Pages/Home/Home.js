@@ -86,7 +86,6 @@ export default function Home() {
         for (let i = 0; i < noStars - 1; i++) {
             stars.push(<i className="fa-regular fa-star" key={intValue + i + 1}></i>);
         }
-
         return stars;
     }
     const showStars = users.map((user, index) => (

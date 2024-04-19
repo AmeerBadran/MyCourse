@@ -6,7 +6,7 @@ import { Link } from "react-router-dom";
 export default function TransportService() {
     return (
         <div className="homeBody">
-            <Header headerLink="singleService" />
+            <Header headerLink="TRANSPORT" />
             <div className="servicesVideo">
                 <video src={require("../../assets/Videos/TransportingTheGoods.mp4")} className="object-fit-cover videoOpenDoor" autoPlay loop muted />
                 <div className="centerText">
@@ -59,12 +59,12 @@ export default function TransportService() {
             </div>
 
             <div className="container containerServiceInfo">
-                <div className="card serviceInfoCard">
-                    <div className="row g-0">
-                        <div className="col-md-4 linkStyleService">
-                            <img src={require(`../../assets/Image/multiBoxes1.jpg`)} className="img-fluid rounded-start " alt="..." />
+                <div className="card serviceInfoCard ">
+                    <div className="row g-0 serviceInfoCard">
+                        <div className="col-md-4 linkStyleService position-relative">
+                            <img src={require(`../../assets/Image/multiBoxes1.jpg`)} className="img-fluid rounded-start position-absolute top-0" alt="..." />
                             <hr></hr>
-                            <Link to="" data-bs-toggle="modal" data-bs-target="#staticBackdrop1" rel="noopener noreferrer" className="serviceSIconLink">
+                            <Link to="" data-bs-toggle="modal" data-bs-target="#staticBackdrop1" rel="noopener noreferrer" className="serviceSIconLink position-absolute">
                                 <h2 className="bigButton"><b>APPLY NOW</b></h2>
                             </Link>
                         </div>
@@ -128,7 +128,7 @@ export default function TransportService() {
                             </div>
                         </div>
 
-                        <div className="col-md-8">
+                        <div className="col-md-8 serviceInfoCard">
                             <div className="card-body">
                                 <h5 className="card-title"><b>Transport multiple boxes</b></h5>
                                 <hr></hr>
@@ -150,9 +150,9 @@ export default function TransportService() {
                     </div>
                 </div>
                 <div className="card serviceInfoCard">
-                    <div className="row g-0">
+                    <div className="row g-0 serviceInfoCard">
                         <div className="col-md-8">
-                            <div className="card-body">
+                            <div className="card-body serviceInfoCard">
                                 <h5 className="card-title"><b>Transport single box</b></h5>
                                 <hr></hr>
                                 <p className="card-text">Transporting a single box from your home to its destination within a few days involves several steps and considerations:
@@ -168,10 +168,10 @@ export default function TransportService() {
                                     By following these steps and considerations, you can ensure that your box is safely transported from your home to its destination within a few days, whether it's a local or international delivery.</p>
                             </div>
                         </div>
-                        <div className="col-md-4 linkStyleService">
-                            <img src={require(`../../assets/Image/SingleBox.jpg`)} className="img-fluid rounded-end" alt="..." />
+                        <div className="col-md-4 linkStyleService position-relative">
+                            <img src={require(`../../assets/Image/SingleBox.jpg`)} className="img-fluid rounded-end position-absolute top-0" alt="..." />
                             <hr></hr>
-                            <Link to="" data-bs-toggle="modal" data-bs-target="#staticBackdrop2" target="_blank" rel="noopener noreferrer" className="serviceSIconLink">
+                            <Link to="" data-bs-toggle="modal" data-bs-target="#staticBackdrop2" target="_blank" rel="noopener noreferrer" className="serviceSIconLink position-absolute">
                                 <h2 className="bigButton"><b>APPLY NOW</b></h2>
                             </Link>
                         </div>
@@ -237,11 +237,11 @@ export default function TransportService() {
                     </div>
                 </div>
                 <div className="card serviceInfoCard">
-                    <div className="row g-0 ">
-                        <div className="col-md-4 linkStyleService">
-                            <img src={require(`../../assets/Image/speedBox.jpg`)} className="img-fluid rounded-start" alt="..." />
+                    <div className="row g-0 serviceInfoCard">
+                        <div className="col-md-4 linkStyleService position-relative">
+                            <img src={require(`../../assets/Image/speedBox.jpg`)} className="img-fluid rounded-start position-absolute top-0" alt="..." />
                             <hr></hr>
-                            <Link to="" data-bs-toggle="modal" data-bs-target="#staticBackdrop3" target="_blank" rel="noopener noreferrer" className="serviceSIconLink">
+                            <Link to="" data-bs-toggle="modal" data-bs-target="#staticBackdrop3" target="_blank" rel="noopener noreferrer" className="serviceSIconLink position-absolute">
                                 <h2 className="bigButton"><b>APPLY NOW</b></h2>
                             </Link>
                         </div>
